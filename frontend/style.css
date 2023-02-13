@@ -5,6 +5,13 @@ body > div {
   background-color: rgb(66, 9, 238);
 }
 
+div.first {
+  border-radius: 50% 50% 0 0;
+}
+
+div.most-inner {
+  border-radius: 50%;
+}
 div > div {
   width: 90vh;
   height: 90vh;
