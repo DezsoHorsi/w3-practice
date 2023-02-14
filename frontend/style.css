@@ -1,0 +1,77 @@
+body {
+  font-family: lem Tahoma, sans-serif;
+  background-color: beige;
+  color: #333;
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+h1 {
+  border: 1px solid black;
+}
+
+/*ezzel csak kiemeltünk egy szövegrészt
+span {
+  background-color: orange;
+  margin: 5px;
+  padding: 5px;
+}
+*/
+
+.box {
+  border: 5px solid rgb(17, 105, 121);
+  background-color: rgb(17, 105, 121, 0.1);
+  border-radius: 5px;
+  width: 200px;
+  /*position: absolute; ezzel kimegy a flow-ból
+  left: 30px;
+  top: 30px;*/
+
+  /*float: right; jobbra rendezzük floatba
+  margin-right: 10px;
+  height: 200px;*/
+  /*position: fixed; /* box elem fix lesz ott marad a gördítéskor*/
+  /*position: absolute; /* viewporthoz viszonyított */
+  /*position: relative;*/
+  top: 30px;
+  left: 30px;
+
+}
+
+.wrapper {
+  border: 1px solid black;
+  /*position: relative;*/
+}
+
+h2 {
+  /*clear: both; ezzel a flow folyik tovább, nem veszik figyelembe a floatot */
+}
+
+/* position static defaultból megvan, nem nagyon használjuk css-ben. 
+
+*/
+
+.main ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+ 
+}
+
+.main li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.main a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav.main {
+  background-color: #333;
+  width: 100%;
+  position: fixed /*sticky*/;
+  top: 0;
+}
