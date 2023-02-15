@@ -1,0 +1,54 @@
+/* border-sizing: border-box; a border méreteit adjuk meg, nem a contentnek. Így jobban lekövethető a méretezés (ez kiszedi oldalról/alulról a látható görgető sávot)*/
+
+/* justify-content: space-between enélkül is a divek egymás alatt vannak elhelyezve*/
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  background-color: rgb(212, 129, 99);
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px;
+}
+
+div {
+  border: 1px solid black;
+}
+
+div.mid {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 0;
+}
+
+div.circle {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+}
+
+div.box {
+  width: 200px;
+  height: 300px;
+}
