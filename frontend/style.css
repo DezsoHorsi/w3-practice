@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%; 
+  height: 100vh;
+
+  background-color: rgb(52, 52, 207);
+}
+
+nav {
+  max-width: 600px;
+  width: 80%; /*hogy két oldalt legyen 10% hely, a body-hoz viszonyítva*/
+  height: 50px;
+
+  border: 2px solid #FFF;
+  display: flex;
+  flex-direction: row; /* ezzel döntjük el, hogy a vízszintes tengelyen helyezzük el az elemeket.*/
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin: 20px auto 0;
+  color: white;
+}
+
+nav ul.nav-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /*elemek közti helyet adja meg a padding és a margin helyett szuper, mert köré nem ad hézagot csak közéjük*/
+
+  list-style-type: none;
+  
+}
